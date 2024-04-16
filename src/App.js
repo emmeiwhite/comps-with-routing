@@ -4,10 +4,21 @@ export default function App() {
   return (
     <div>
       <div>
-        <Button>Buy Now</Button>
+        <Button
+          primary
+          rounded
+          outline
+        >
+          Buy Now
+        </Button>
       </div>
       <div>
-        <Button>Subscribe</Button>
+        <Button
+          primary
+          warning
+        >
+          Subscribe
+        </Button>
       </div>
       <div>
         <Button>Login</Button>
