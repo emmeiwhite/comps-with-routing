@@ -8,17 +8,13 @@ export default function App() {
           primary
           rounded
           outline
+          border
         >
           Buy Now
         </Button>
       </div>
       <div>
-        <Button
-          primary
-          warning
-        >
-          Subscribe
-        </Button>
+        <Button primary>Subscribe</Button>
       </div>
       <div>
         <Button>Login</Button>

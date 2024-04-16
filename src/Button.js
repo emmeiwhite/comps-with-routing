@@ -10,8 +10,11 @@ export default function Button({
   success,
   danger,
 }) {
-  console.log(primary, secondary);
-  return <button>{children}</button>;
+  return (
+    <button className="border my-2 mx-3 p-2 bg-red-500 text-white">
+      {children}
+    </button>
+  );
 }
 
 Button.propTypes = {
