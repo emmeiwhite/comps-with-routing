@@ -10,9 +10,10 @@ export default function Button({
   warning,
   success,
   danger,
+  ...rest
 }) {
   const classes = twMerge(
-    classNames("border my-2 mx-3 px-3 py-1.5", {
+    classNames("flex items-center border my-2 mx-3 px-3 py-1.5", {
       // Primary Button
       "bg-blue-500 border-blue-500 text-white": primary,
       // Secondary Button
@@ -35,7 +36,14 @@ export default function Button({
     })
   );
 
-  return <button className={classes}>{children}</button>;
+  return (
+    <button
+      className={classes}
+      {...rest}
+    >
+      {children}
+    </button>
+  );
 }
 
 Button.propTypes = {

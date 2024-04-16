@@ -1,6 +1,20 @@
 import Button from "./Button";
+import {
+  GoBell,
+  GoFileDirectory,
+  GoInbox,
+  GoPerson,
+  GoBookmark,
+} from "react-icons/go";
 
 export default function App() {
+  const handleClick = () => {
+    console.log("Clicked 1");
+  };
+
+  const handleMouseOver = () => {
+    console.log("onMouseOver!");
+  };
   return (
     <div>
       <div>
@@ -9,7 +23,10 @@ export default function App() {
           rounded
           outline
           border
+          onClick={handleClick}
+          onMouseOver={handleMouseOver}
         >
+          <GoBell />
           Buy Now
         </Button>
       </div>
@@ -18,6 +35,7 @@ export default function App() {
           secondary
           rounded
         >
+          <GoFileDirectory />
           Subscribe
         </Button>
       </div>
@@ -26,6 +44,7 @@ export default function App() {
           warning
           outline
         >
+          <GoInbox />
           Login
         </Button>
       </div>
@@ -34,6 +53,7 @@ export default function App() {
           danger
           outline
         >
+          <GoPerson />
           Register
         </Button>
       </div>
@@ -42,6 +62,7 @@ export default function App() {
           success
           rounded
         >
+          <GoBookmark />
           Add To Cart
         </Button>
       </div>
