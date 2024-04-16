@@ -14,16 +14,36 @@ export default function App() {
         </Button>
       </div>
       <div>
-        <Button primary>Subscribe</Button>
+        <Button
+          secondary
+          rounded
+        >
+          Subscribe
+        </Button>
       </div>
       <div>
-        <Button>Login</Button>
+        <Button
+          warning
+          outline
+        >
+          Login
+        </Button>
       </div>
       <div>
-        <Button>Register</Button>
+        <Button
+          danger
+          outline
+        >
+          Register
+        </Button>
       </div>
       <div>
-        <Button>Add To Cart</Button>
+        <Button
+          success
+          rounded
+        >
+          Add To Cart
+        </Button>
       </div>
     </div>
   );
