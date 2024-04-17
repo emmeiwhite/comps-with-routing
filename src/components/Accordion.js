@@ -2,9 +2,14 @@ import { useState } from "react";
 import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
 
 export default function Accordion({ items }) {
-  const [expandedIndex, setExpandedIndex] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState(-1);
   const handleClick = (index) => {
-    setExpandedIndex(index);
+    // This is a good logic to toggle clicking on the expanded accordion title, in which case, we'll make it  closed
+    if (expandedIndex === index) {
+      setExpandedIndex(-1);
+    } else {
+      setExpandedIndex(index);
+    }
   };
 
   return (
